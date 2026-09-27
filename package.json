@@ -1,0 +1,11 @@
+{
+  "name": "nrhoot-website",
+  "private": true,
+  "scripts": {
+    "serve": "node serve.mjs",
+    "screenshot": "node screenshot.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0"
+  }
+}

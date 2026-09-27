@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nrhoot — Grow a closer relationship to your produce.</title>
+  <meta name="description" content="Grow a closer relationship to your produce. Connect and share with your community on the Nrhoot app." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav class="nav-glass fixed top-0 left-0 right-0 z-50" aria-label="Main">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between" style="height:66px;">
+    <a href="index.html" aria-label="Nrhoot home" class="flex items-center">
+      <img src="assets/logo-trimmed.png" alt="Nrhoot" style="height:40px;width:auto;" />
+    </a>
+
+    <ul class="hidden md:flex items-center list-none" style="gap:36px;">
+      <li><a href="index.html"     class="nav-link" aria-current="page">App Link</a></li>
+      <li><a href="waitlist.html"  class="nav-link">Waitlist</a></li>
+      <li><a href="help.html"      class="nav-link">Help</a></li>
+      <li><a href="follow-us.html" class="nav-link">Follow Us</a></li>
+    </ul>
+
+    <button class="menu-btn md:hidden p-2 rounded-xl" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <ul id="mobile-menu" class="mobile-menu md:hidden list-none px-6 pb-4">
+    <li><a href="index.html"     class="nav-link" aria-current="page">App Link</a></li>
+    <li><a href="waitlist.html"  class="nav-link">Waitlist</a></li>
+    <li><a href="help.html"      class="nav-link">Help</a></li>
+    <li><a href="follow-us.html" class="nav-link">Follow Us</a></li>
+  </ul>
+</nav>
+
+
+<main>
+<!-- ═══════════════════ HERO: APP LINK ═══════════════════ -->
+<section style="
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top:66px;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 85% 65% at 78% 18%, rgba(168,230,207,0.52) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 45% at 15% 88%, rgba(32,200,151,0.14) 0%, transparent 60%),
+    #E7F7F4;
+">
+  <!-- Decorative blobs -->
+  <div aria-hidden="true" style="position:absolute;top:-120px;right:-80px;width:560px;height:560px;border-radius:50%;background:rgba(168,230,207,0.28);filter:blur(72px);pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute;bottom:-100px;left:-80px;width:340px;height:340px;border-radius:50%;background:rgba(32,200,151,0.11);filter:blur(60px);pointer-events:none;"></div>
+
+  <div class="max-w-6xl mx-auto px-6 w-full grid md:grid-cols-2 items-center" style="gap:56px;padding-top:56px;padding-bottom:120px;">
+
+    <!-- Copy -->
+    <div class="reveal" style="max-width:520px;">
+      <img src="assets/logo-trimmed.png" alt="" style="height:88px;width:auto;margin-bottom:24px;display:block;" />
+
+      <h1 class="font-display" style="font-size:clamp(44px,5.5vw,72px);font-weight:900;line-height:1.02;letter-spacing:-0.03em;color:#000;margin-bottom:22px;">
+        Grow a closer relationship to
+        <span style="color:#20C897;">your produce.</span>
+      </h1>
+
+      <p style="font-size:17px;line-height:1.7;color:#3C3C43;letter-spacing:-0.2px;margin-bottom:32px;">
+        Connect and share with your community.<br/>
+        Future of our food system.
+      </p>
+
+      <a href="https://apps.apple.com/us/app/nrhoot/id6756333531" class="btn-green" style="padding:14px 28px;font-size:16px;">
+        Click here to get the app
+      </a>
+
+      <div class="or-divider" style="margin:24px 0;">or</div>
+
+      <a href="https://apps.apple.com/us/app/nrhoot/id6756333531" class="qr-card">
+        <img src="assets/old-site/qr-app-store.png" alt="QR code linking to Nrhoot on the App Store" />
+        <span>Scan this QR code</span>
+      </a>
+    </div>
+
+    <!-- Phone mockup -->
+    <div class="reveal d1 flex justify-center md:justify-end">
+      <div class="phone-float mockup">
+        <img src="assets/old-site/phone-blueberries.png" alt="Nrhoot app showing a Blueberries listing: $5 box, under 0.5 miles away, with Message and Make Offer buttons" class="mockup-img" style="width:min(300px,78vw);" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave transition -->
+  <div aria-hidden="true" style="position:absolute;bottom:0;left:0;right:0;line-height:0;">
+    <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" height="70">
+      <path d="M0,40 C280,70 480,10 720,40 C960,70 1160,10 1440,40 L1440,70 L0,70Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+</main>
+
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer style="background:#fff;padding:48px 0 40px;">
+  <div class="max-w-6xl mx-auto px-6">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:32px;margin-bottom:40px;">
+
+      <div>
+        <img src="assets/logo-trimmed.png" alt="Nrhoot" style="height:44px;width:auto;margin-bottom:12px;" />
+        <p style="font-size:13px;color:#8E8E93;line-height:1.65;max-width:220px;">
+          Fresh produce. Real neighbors.<br/>True community.
+        </p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul style="display:flex;flex-wrap:wrap;gap:10px 32px;list-style:none;">
+          <li><a href="index.html"     class="foot-link">App Link</a></li>
+          <li><a href="waitlist.html"  class="foot-link">Waitlist</a></li>
+          <li><a href="help.html"      class="foot-link">Help</a></li>
+          <li><a href="follow-us.html" class="foot-link">Follow Us</a></li>
+          <li><a href="mailto:tnrhoot@gmail.com" class="foot-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div style="border-top:1px solid #E5E5EA;padding-top:22px;text-align:center;">
+      <p style="font-size:12px;color:#8E8E93;">© 2026 Nrhoot. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
